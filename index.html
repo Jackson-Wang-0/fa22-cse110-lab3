@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Meeting Minute</title>
+    <meta name="description" content="Minutes from a sample team">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <h1><span>CSE110 Team Meeting Minutes</span></h1>
+        <hr>
+        
+        <section>
+            <h2>Brainstorming Session</h2>
+            <h3>Date: April 12, 2023</h3>
+        </section>
+        
+        <div>
+            <p><b>Attendance:</b></p>
+            <ul>
+                <li>Steven</li>
+                <li>Jackson</li>
+                <li>Bob</li>
+            </ul>
+
+            <p><b>Agenda:</b></p>
+            <ol>
+                <li>Review of project goals</li>
+                <li>Brainstorming ideas for new features</li>
+                <li>Discussion of technical feasibility of ideas</li>
+                <li>Assigning action items for next meeting</li>
+            </ol>
+
+            <p><b>Unfinished Business:</b></p>
+            <ul>
+                <li>None</li>
+            </ul>
+
+            <p><b>New Business:</b></p>
+            <ul>
+                <li>Reviewed project goals and timeline</li>
+                <li>Brainstormed ideas for new features, including:</li>
+                <ul>
+                <li><em>A calendar integration</em></li>
+                <li><em>A notification system</em></li>
+                <li><em>A task priority system</em></li>
+                </ul>
+                <li>Discussed technical feasibility of each idea and assigned action items for further research</li>
+            </ul>
+
+            <p><b>Miscellaneous:</b></p>
+            <ul>
+                <li>Discussed scheduling for next meeting</li>
+                <li>Steven presented a diagram of the current architecture on the whiteboard, which was captured in a photo</li>
+            </ul>
+
+            <p><strong><i>Diagram</i></strong></p>
+            <img src="whiteboard.jpg" alt="Diagram of architecture on whiteboard" width="300" height="200">
+        </div>
+
+        <p><strong><i>Audio Recording of The Meeting</i></strong></p>
+        <audio controls>
+            <source src="lisa.mp3" type="audio/mpeg">
+        </audio>
+        
+        <p><strong><i>Video Recording of The Meeting</i></strong></p>
+        <video controls>
+            <source src="lisa.mp4" type="video/mp4">
+        </video>
+        
+        <br>
+        <details>
+            <summary>Click to show more information</summary>
+            <p>I lied, There is no more information :)</p>
+        </details>
+
+      </main>
+      <hr>
+
+      <p><strong><i>Have any questions? Feel free to send a message!</i></strong></p>
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <br>
+        </fieldset>
+        <fieldset>
+          <legend>Message</legend>
+          <textarea id="message" name="message"></textarea>
+          <br>
+          <label for="category">Category:</label>
+          <input list="categories" name="category">
+          <datalist id="categories">
+            <option value="General">
+            <option value="Technical">
+            <option value="Other">
+          </datalist>
+          <br>
+          <label for="priority">Priority:</label>
+          <select id="priority" name="priority">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+          <br>
+          <button type="submit">Send Message</button>
+        </fieldset>
+      </form>
+
+
+      <footer>
+        <p>&copy; 2023 CSE110</p>
+      </footer>
+
+      
+
+  </body>
+</html>
