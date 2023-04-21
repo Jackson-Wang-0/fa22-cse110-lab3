@@ -1,19 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rubik+Pixels&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
+.core_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.core_info > * {
+    flex-basis: calc(33.33% - 10px);
+}
+
+section{
+    max-width: 600px;
+}
+
+h2, h3 {
+    color: #85dcb8;
+    font-size: 25px;
+    max-width: 600px;
+}
+
+.agenda p + ol {
+    color: #41b3a3!important;
+}
+
 img[data-image-type="jpg"] {
-    border: 1px solid black;
+    border-style: dashed;
+    border-color: #E8A87C;
+    border-width: 20%;
+    border-radius: 0.5rem;
 }
 
 #container {
-    display: flex;
+    max-width: 100%;
 }
 
 .title {
-    color: #FF5733;
+    color: #E27D60;
+    font-size: 20px;
     text-align: center;
     text-decoration: underline;
+    font-family: 'Rubik Pixels', cursive;
+}
+
+.attendance-container{
+    padding-left: 15rem;
+}
+
+.attendance-container ~ ul {
+    padding-top: 0px;
 }
 
 nav {
@@ -48,4 +89,36 @@ nav a {
 nav a:hover {
     background-color: white;
     color: #333;
+}
+
+.agenda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.agenda p {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Rubik Pixels', cursive;
+    color: #E27D60;
+}
+
+.agenda ol {
+    grid-column: 1 / -1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.agenda li {
+    grid-column: 1 / -1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
