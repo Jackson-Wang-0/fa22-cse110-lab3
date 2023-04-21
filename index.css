@@ -1,5 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rubik+Pixels&display=swap');
 
+@media screen and (max-width: 960px) {
+    .core_info {
+        flex-direction: column !important;
+        margin: auto;
+    }
+    .attendance-container{
+        /* same result ~~~ */
+        margin:0!important;
+        padding:0!important;
+        margin-top: 0; 
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .attendance-container li{
+        display: block;
+    }
+    .attendance-container ul{
+        padding: 0!important;
+        justify-items: center;
+    }
+    .business{
+        flex-direction: column!important;
+    }
+    .unfinished_bus{
+        max-width: 100%!important;
+    }
+    
+    .new_bus{
+        max-width: 100%!important;
+    }
+    
+    .mis{
+        max-width: 100%!important;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -43,10 +84,12 @@ img[data-image-type="jpg"] {
 
 .title {
     color: #E27D60;
+    min-width: auto;
     font-size: 20px;
     text-align: center;
     text-decoration: underline;
     font-family: 'Rubik Pixels', cursive;
+    position: relative;
 }
 
 .attendance-container{
@@ -87,8 +130,18 @@ nav a {
 }
 
 nav a:hover {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: #333;
+}
+
+nav a:active {
+    background-color: #85dcb8;
+    color: #333;
+}
+
+/* combined selector */
+nav a:hover:active {
+    background-color: #85dcb8;
 }
 
 .agenda {
@@ -121,4 +174,32 @@ nav a:hover {
     background-color: #f1f1f1;
     margin-bottom: 10px;
     font-size: 16px;
+}
+
+p, img, audio, video {
+    display: block;
+}
+  
+img, audio, video {
+    display: inline;
+}
+
+.business{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.unfinished_bus{
+    max-width: 30%;
+}
+
+.new_bus{
+    color: hsl(0,100,0);
+    max-width: 30%;
+}
+
+.mis{
+    max-width: 30%;
 }
